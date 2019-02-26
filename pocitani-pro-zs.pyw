@@ -64,6 +64,7 @@ class App():
         formula_confirm.grid(row = 1, column = len(self.formula_labels) + 2)
         
         master.bind('<Return>', lambda event: self.formula_check_update())  # Reaguje na stisknuti enteru
+        master.bind('<KP_Enter>', lambda event: self.formula_check_update())  # Reaguje na stisknuti enteru
             
         # Skore
         score_frame = tk.Frame(master)
